@@ -1,6 +1,6 @@
 # Udacity Nanodegree blogging website
 
-[Demo](https://g-savitha.github.io/UND-BlogWebsite/index.html)
+[Demo](https://und-blog-website.vercel.app/)
 
 Images from Unsplash
 
