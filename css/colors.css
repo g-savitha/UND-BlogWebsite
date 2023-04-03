@@ -1,0 +1,22 @@
+:root {
+  --bg-color: hsl(0, 0%, 100%);
+  --author-bg-color: hsl(70, 4%, 91%);
+  --text-color: hsl(233, 27%, 13%);
+  --social-icons-color: hsl(233, 27%, 13%);
+  --theme-bg-color: hsl(233, 27%, 13%);
+  --theme-author-bg-color: hsl(233, 17%, 20%);
+  --theme-text-color: hsl(0, 0%, 100%);
+  --theme-social-icons-color: hsl(0, 0%, 100%);
+  --logo-color: hsl(229, 96%, 64%);
+}
+.dark-theme {
+  --bg-color: hsl(233, 27%, 13%);
+  --author-bg-color: hsl(233, 17%, 20%);
+  --text-color: hsl(0, 0%, 100%);
+  --social-icons-color: hsl(0, 0%, 100%);
+  --theme-bg-color: hsl(0, 0%, 100%);
+  --theme-author-bg-color: hsl(70, 4%, 91%);
+  --theme-text-color: hsl(233, 27%, 13%);
+  --theme-social-icons-color: hsl(233, 27%, 13%);
+  --logo-color: hsl(229, 96%, 64%);
+}

@@ -1,0 +1,47 @@
+@import url("./global.css");
+@import url("./colors.css");
+footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 16px;
+  border-top: 1px solid var(--theme-author-bg-color);
+}
+.footer_info {
+  flex-direction: column;
+}
+.footer_logo_info {
+  display: flex;
+  align-items: center;
+}
+
+.footer_logo_info > img {
+  width: 32px;
+}
+.footer_logo_info > p {
+  color: var(--logo-color);
+}
+.blog_title > span {
+  font-weight: bold;
+}
+.tnc ul {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-top: auto;
+}
+.tnc li {
+  list-style: none;
+  padding: 4px;
+}
+.tnc a {
+  color: var(--theme-text-color);
+  text-decoration: none;
+}
+
+.tnc a:hover {
+  text-decoration: underline;
+  color: var(--logo-color);
+}

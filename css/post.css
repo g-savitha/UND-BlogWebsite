@@ -1,0 +1,72 @@
+@import url("./global.css");
+@import url("./colors.css");
+@import url("./newsletter.css");
+@import url("./footer.css");
+/* Custom fonts */
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+.post {
+  width: 800px;
+  margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 16px;
+}
+.post_title {
+  width: fit-content;
+  font-size: 45px;
+}
+.post_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.post_tag {
+  border: 1px solid var(--logo-color);
+  width: fit-content;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: var(--logo-color);
+  font-size: 300;
+  color: white;
+  padding: 4px;
+}
+
+.post_dated {
+  font-size: 300;
+  font-weight: bold;
+  color: var(--logo-color);
+}
+
+.post_image {
+  width: 100%;
+  height: 450px;
+}
+
+h2 {
+  border-bottom: 2px dashed var(--logo-color);
+  width: fit-content;
+}
+
+.post_bq {
+  font-family: "Satisfy", cursive;
+  font-size: larger;
+  border-left: 5px solid var(--logo-color);
+  padding: 8px;
+  background-color: var(--theme-author-bg-color);
+  border-radius: 4px;
+}
+
+/* Phone */
+@media (max-width: 750px) {
+  .post {
+    width: 400px;
+  }
+}
+/* Tablet */
+@media (max-width: 991px) and (min-width: 751px) {
+  .post {
+    width: 720px;
+  }
+}

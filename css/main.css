@@ -1,0 +1,130 @@
+@import url("./global.css");
+@import url("./newsletter.css");
+@import url("./footer.css");
+@import url("./colors.css");
+body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+/* Author styling */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 8px auto;
+  gap: 8px;
+  padding: 16px;
+  background-color: var(--theme-author-bg-color);
+  border-radius: 10px;
+}
+.author_about p {
+  max-width: 600px;
+  word-wrap: break-word;
+}
+.author_info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.author_name {
+  font-weight: 700;
+}
+.author_title {
+  font-style: italic;
+}
+
+.social {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.social img {
+  /* increase the size of the image */
+  width: 32px;
+}
+
+/* Posts */
+.post_title {
+  margin: 0 auto;
+  width: 800px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+  grid-gap: 16px;
+  width: 800px;
+  margin: 0 auto;
+}
+.card {
+  background-color: var(--theme-author-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+.card_img {
+  width: 200px;
+}
+.card_details {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.card_details .title {
+  font-size: 500;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+.card_details .tag {
+  border: 1px solid var(--logo-color);
+  width: fit-content;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: var(--logo-color);
+  font-size: 300;
+  color: white;
+  padding: 4px;
+}
+
+.card_dated {
+  font-size: 300;
+  font-weight: bold;
+  color: var(--logo-color);
+}
+
+@media (max-width: 750px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 400px;
+  }
+  .about {
+    width: 400px;
+  }
+  .post_title {
+    width: 400px;
+  }
+}
+@media (max-width: 991px) and (min-width: 751px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 720px;
+  }
+  .about {
+    width: 720px;
+  }
+  .post_title {
+    width: 720px;
+  }
+}

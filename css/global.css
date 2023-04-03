@@ -1,0 +1,68 @@
+@import url("./colors.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Satisfy&display=swap");
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* theme change */
+/* colors are taken from colors.css file */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--theme-bg-color);
+    color: var(--theme-text-color);
+  }
+}
+
+/* This ensures that styles are applied correctly when the toggle button is clicked */
+body.dark-theme {
+  background-color: var(--theme-bg-color);
+  color: var(--theme-text-color);
+}
