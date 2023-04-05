@@ -11,11 +11,11 @@ nav {
 .nav_links ul {
   gap: 8px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: baseline;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0 auto;
 }
 .nav_links li {
   margin: 0 10px;
@@ -43,9 +43,10 @@ nav {
 }
 .search {
   gap: 4px;
-  display: inline-flex;
+  display: flex;
 }
 .search_input {
+  width: 180px;
   border-radius: 4px;
   border: none;
   outline: none;

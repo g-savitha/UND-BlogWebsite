@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meta Blog</title>
-    <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/newsletter.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/header.css" />
+
+    <!-- JS Snippet to toggle dark theme manually -->
+    <script defer src="./scripts/snippet.js"></script>
   </head>
   <body>
     <header>
@@ -22,7 +21,7 @@
         <div class="nav_links">
           <ul>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./post.html">Single Post</a></li>
+            <li><a href="./statics/post.html">Blog</a></li>
           </ul>
         </div>
         <div class="search">
@@ -40,8 +39,8 @@
         <div class="author_info">
           <img src="./assets/Image.svg" alt="Author Image" />
           <div class="author_profile">
-            <div class="author_name">Jonathon Doe</div>
-            <div class="author_title">Blogger</div>
+            <div class="author_name"><h2>Jonathon Doe</h2></div>
+            <div class="author_title"><h3>Tech Blogger</h3></div>
           </div>
         </div>
         <div class="author_about">
@@ -63,123 +62,150 @@
     <main>
       <h1 class="post_title">Latest Posts</h1>
       <section class="cards">
-        <div class="card">
-          <a class="card_image" href="./post.html">
+        <Card class="card">
+          <figure class="card_image">
             <img
               src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt="Travel Image"
             />
-          </a>
-          <h4 class="title">Things you should know before travelling</h4>
+          </figure>
+          <figcaption class="img_caption">Travel Image</figcaption>
+          <h3 class="title">Things you should know before travelling</h3>
           <div class="card_details">
-            <p class="tag">Travel</p>
+            <a href="./statics/post.html">
+              <button class="card_btn">Read more</button></a
+            >
             <span class="card_dated">Aug 20, 2022</span>
           </div>
-        </div>
-        <div class="card">
-          <a class="card_image" href="./post.html">
+        </Card>
+        <Card class="card">
+          <figure class="card_image">
             <img
               src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt="Travel Image"
             />
-          </a>
-          <h4 class="title">Things you should know before travelling</h4>
+          </figure>
+          <figcaption class="img_caption">Travel Image</figcaption>
+          <h3 class="title">Things you should know before travelling</h3>
           <div class="card_details">
-            <p class="tag">Travel</p>
+            <a href="./statics/post.html">
+              <button class="card_btn">Read more</button></a
+            >
             <span class="card_dated">Aug 20, 2022</span>
           </div>
-        </div>
-        <div class="card">
-          <a class="card_image" href="./post.html">
+        </Card>
+        <Card class="card">
+          <figure class="card_image">
             <img
               src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt="Travel Image"
             />
-          </a>
-          <h4 class="title">Things you should know before travelling</h4>
+          </figure>
+          <figcaption class="img_caption">Travel Image</figcaption>
+          <h3 class="title">Things you should know before travelling</h3>
           <div class="card_details">
-            <p class="tag">Travel</p>
+            <a href="./statics/post.html">
+              <button class="card_btn">Read more</button></a
+            >
             <span class="card_dated">Aug 20, 2022</span>
           </div>
-        </div>
-        <div class="card">
-          <a class="card_image" href="./post.html">
+        </Card>
+        <Card class="card">
+          <figure class="card_image">
             <img
               src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt="Travel Image"
             />
-          </a>
-          <h4 class="title">Things you should know before travelling</h4>
+          </figure>
+          <figcaption class="img_caption">Travel Image</figcaption>
+          <h3 class="title">Things you should know before travelling</h3>
           <div class="card_details">
-            <p class="tag">Travel</p>
+            <a href="./statics/post.html">
+              <button class="card_btn">Read more</button></a
+            >
             <span class="card_dated">Aug 20, 2022</span>
           </div>
-        </div>
-        <div class="card">
-          <a class="card_image" href="./post.html">
+        </Card>
+        <Card class="card">
+          <figure class="card_image">
             <img
               src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt="Travel Image"
             />
-          </a>
-          <h4 class="title">Things you should know before travelling</h4>
+          </figure>
+          <figcaption class="img_caption">Travel Image</figcaption>
+          <h3 class="title">Things you should know before travelling</h3>
           <div class="card_details">
-            <p class="tag">Travel</p>
+            <a href="./statics/post.html">
+              <button class="card_btn">Read more</button></a
+            >
             <span class="card_dated">Aug 20, 2022</span>
           </div>
-        </div>
-        <div class="card">
-          <a class="card_image" href="./post.html">
+        </Card>
+        <Card class="card">
+          <figure class="card_image">
             <img
               src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt="Travel Image"
             />
-          </a>
-          <h4 class="title">Things you should know before travelling</h4>
+          </figure>
+          <figcaption class="img_caption">Travel Image</figcaption>
+          <h3 class="title">Things you should know before travelling</h3>
           <div class="card_details">
-            <p class="tag">Travel</p>
+            <a href="./statics/post.html">
+              <button class="card_btn">Read more</button></a
+            >
             <span class="card_dated">Aug 20, 2022</span>
           </div>
-        </div>
-        <div class="card">
-          <a class="card_image" href="./post.html">
+        </Card>
+        <Card class="card">
+          <figure class="card_image">
             <img
               src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt="Travel Image"
             />
-          </a>
-          <h4 class="title">Things you should know before travelling</h4>
+          </figure>
+          <figcaption class="img_caption">Travel Image</figcaption>
+          <h3 class="title">Things you should know before travelling</h3>
           <div class="card_details">
-            <p class="tag">Travel</p>
+            <a href="./statics/post.html">
+              <button class="card_btn">Read more</button></a
+            >
             <span class="card_dated">Aug 20, 2022</span>
           </div>
-        </div>
-        <div class="card">
-          <a class="card_image" href="./post.html">
+        </Card>
+        <Card class="card">
+          <figure class="card_image">
             <img
               src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt="Travel Image"
             />
-          </a>
-          <h4 class="title">Things you should know before travelling</h4>
+          </figure>
+          <figcaption class="img_caption">Travel Image</figcaption>
+          <h3 class="title">Things you should know before travelling</h3>
           <div class="card_details">
-            <p class="tag">Travel</p>
+            <a href="./statics/post.html">
+              <button class="card_btn">Read more</button></a
+            >
             <span class="card_dated">Aug 20, 2022</span>
           </div>
-        </div>
-        <div class="card">
-          <a class="card_image" href="./post.html">
+        </Card>
+        <Card class="card">
+          <figure class="card_image">
             <img
               src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt="Travel Image"
             />
-          </a>
-          <h4 class="title">Things you should know before travelling</h4>
+          </figure>
+          <figcaption class="img_caption">Travel Image</figcaption>
+          <h3 class="title">Things you should know before travelling</h3>
           <div class="card_details">
-            <p class="tag">Travel</p>
+            <a href="./statics/post.html">
+              <button class="card_btn">Read more</button></a
+            >
             <span class="card_dated">Aug 20, 2022</span>
           </div>
-        </div>
+        </Card>
       </section>
       <section class="news_letter">
         <p class="n_title">Weekly Newsletter</p>
@@ -216,7 +242,5 @@
         </ul>
       </div>
     </footer>
-      <!-- JS Snippet to toggle dark theme manually -->
-    <script defer src="snippet.js"></script>
   </body>
 </html>

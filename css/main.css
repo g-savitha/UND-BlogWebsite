@@ -1,4 +1,5 @@
 @import url("./global.css");
+@import url("./header.css");
 @import url("./newsletter.css");
 @import url("./footer.css");
 @import url("./colors.css");
@@ -68,11 +69,19 @@ main {
   padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   flex: 1;
 }
-.card_img {
-  width: 200px;
+
+.card .title {
+  font-size: 500;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+.img_caption {
+  margin: 0 auto;
+  color: var(--logo-color);
+  text-decoration: none;
 }
 .card_details {
   margin-top: auto;
@@ -80,12 +89,8 @@ main {
   justify-content: space-between;
   align-items: baseline;
 }
-.card_details .title {
-  font-size: 500;
-  font-weight: bold;
-  padding-bottom: 4px;
-}
-.card_details .tag {
+
+.card_btn {
   border: 1px solid var(--logo-color);
   width: fit-content;
   border-radius: 5px;
@@ -95,10 +100,14 @@ main {
   color: white;
   padding: 4px;
 }
-
+.card_btn:hover {
+  background-color: var(--theme-author-bg-color);
+}
 .card_dated {
-  font-size: 300;
+  font-size: small;
   font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
   color: var(--logo-color);
 }
 
@@ -106,13 +115,13 @@ main {
   .cards {
     display: grid;
     grid-template-columns: 1fr;
-    width: 400px;
+    width: 380px;
   }
   .about {
-    width: 400px;
+    width: 380px;
   }
   .post_title {
-    width: 400px;
+    width: 380px;
   }
 }
 @media (max-width: 991px) and (min-width: 751px) {

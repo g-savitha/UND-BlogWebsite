@@ -42,6 +42,7 @@
 .n_title {
   font-size: large;
   font-weight: bold;
+  text-decoration: underline;
 }
 .n_sub_title {
   font-size: small;
@@ -50,6 +51,6 @@
 /* Phone */
 @media (max-width: 750px) {
   .news_letter {
-    max-width: 400px;
+    max-width: 380px;
   }
 }

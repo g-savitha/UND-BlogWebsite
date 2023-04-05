@@ -5,27 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meta Blog</title>
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/newsletter.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/post.css" />
+    <link rel="stylesheet" href="../css/post.css" />
     <!-- JS Snippet to toggle dark theme manually -->
-    <script defer src="snippet.js"></script>
+    <script defer src="../scripts/snippet.js"></script>
   </head>
   <body>
     <header>
       <nav>
         <div class="logo">
-          <a href="./index.html"
-            ><img src="./assets/logo.svg" alt="Logo" class="logo_img"
+          <a href="../index.html"
+            ><img src="../assets/logo.svg" alt="Logo" class="logo_img"
           /></a>
         </div>
         <div class="nav_links">
           <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./post.html">Single Post</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../statics/post.html">Blog</a></li>
           </ul>
         </div>
         <div class="search">
@@ -45,12 +40,15 @@
         <h1 class="post_title">Things you should know before travelling</h1>
         <div class="post_details">
           <p class="post_tag">Technology</p>
-          <span class="post_dated">Aug 20, 2022</span>
+          <span class="post_dated">August 20, 2022</span>
         </div>
-        <img
-          src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-          alt="image"
-        />
+        <figure class="post_image">
+          <img
+            src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="image"
+          />
+          <figcaption class="post_image_caption">Travel Image</figcaption>
+        </figure>
         <p class="post_text">
           Traveling is an enriching experience that opens up new horizons,
           exposes us to different cultures, and creates memories that last a
@@ -98,10 +96,13 @@
           Traveling can expose you to new environments and potential health
           risks, so it's crucial to take precautions to stay safe and healthy.
         </blockquote>
-        <img
-          src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dHJhdmVsfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-          alt="Man with a backpack"
-        />
+        <figure class="post_image">
+          <img
+            src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dHJhdmVsfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="Man with a backpack"
+          />
+          <figcaption>Man with a backpack</figcaption>
+        </figure>
         <h2>Pack lightly and smartly</h2>
         <p>
           Packing can be a daunting task, but with some careful planning and
@@ -146,7 +147,7 @@
         </p>
       </section>
       <section class="news_letter">
-        <p class="n_title">Weekly Newsletter</p>
+        <h3 class="n_title">Weekly Newsletter</h3>
         <p class="n_sub_title">Get blogs articles and offers via email</p>
         <input type="text" placeholder="email" class="email" /><button
           type="submit"
@@ -160,7 +161,7 @@
       <div class="footer_info">
         <div class="footer_logo_info">
           <img
-            src="./assets/icons/logo.svg"
+            src="../assets/icons/logo.svg"
             alt="footer_logo"
             class="footer_logo"
           />
